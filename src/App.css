@@ -26,10 +26,13 @@
     transform: rotate(360deg);
   }
 }
-
-/* .list-group-item,
-.text-center {
-  align-items: center;
-  justify-content: center;
+.icons {
   display: flex;
-} */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ico {
+  height: 40px;
+  width: 30px;
+}
