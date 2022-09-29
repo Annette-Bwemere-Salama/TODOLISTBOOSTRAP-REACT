@@ -19,14 +19,20 @@ class ClassState extends Component {
     }
 
     addmin = () => {
-        this.setState({
-            counter: this.state.counter - 1
-        })
+        this.setState(prevState => {
+            return {
+                counter: prevState.counter - 1
+            }
+
+        }
+
+        )
     }
     render() {
         return (
             <div>
-                <p>Class state: {this.state.counter}</p>
+                <h3>Class state: {this.state.counter}</h3>
+                {/* <p>Class state: </p> */}
                 <button onClick={this.addOne}>State dans class +</button>
                 <button onClick={this.addmin}>State moins -</button>
 
