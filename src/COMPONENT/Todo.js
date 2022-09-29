@@ -13,7 +13,7 @@ const Todo = () => {
 
     const myTodos = todos.map(todo => {
         return (
-            <li className='list-group-item  border border-success' key={todo.id}>{todo.todo}</li>
+            <li className='list-group-item  shadow p-3 mb-2 bg-body rounded' key={todo.id}>{todo.todo}</li>
         )
     })
 

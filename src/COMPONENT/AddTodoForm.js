@@ -12,11 +12,11 @@ const AddTodoForm = ({ addNewTodo }) => {
   }
 
   return (
-    <form className='mt-4 border border-success' onSubmit={handleTodo}>
+    <form className='mt-4 shadow p-3 mb-5 bg-body rounded' onSubmit={handleTodo}>
       <div className='card card-body' >
         <div className='form-group'>
           <label>Ajouter Todo</label>
-          <input className='form-control  border border-secondary  border border-3'
+          <input className='form-control  border border-secondary  border border-2'
             value={addTodo} type="text"
             onChange={(e) => setAddTodo(e.target.value)}
           />

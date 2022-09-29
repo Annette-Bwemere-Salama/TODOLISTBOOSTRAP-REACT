@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container mt-4 shadow-lg p-3 mb-5 bg-white rounded">
         <div className='icons'>
           <h6 className='text-center'>TO DO LIST</h6>
           <BsFillBrightnessHighFill className='ico'></BsFillBrightnessHighFill>
