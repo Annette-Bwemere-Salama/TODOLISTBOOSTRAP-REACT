@@ -4,12 +4,14 @@ const AddTodoForm = ({ addNewTodo }) => {
 
   const [addTodo, setAddTodo] = useState('')
 
-  // addNewTodo(addTodo);
 
   const handleTodo = (e) => {
-    e.preveventDefault()
-    addNewTodo(addTodo);
+    e.preventDefault()
+    addNewTodo(addTodo)
+
+    setAddTodo('')
   }
+
 
   return (
     <form className='mt-4 shadow p-3 mb-5 bg-body rounded' onSubmit={handleTodo}>
