@@ -22,6 +22,8 @@ const Todo = () => {
     const addNewTodo = (newTodo) => {
 
         if (newTodo !== '') {
+
+            warnirng && setWarning(false)
             setTodos([...todos, {
                 id: uuid(),
                 todo: newTodo
@@ -31,8 +33,8 @@ const Todo = () => {
         }
     }
 
-    const warnirngMsg = warnirng && <div className='alert alert-danger' role="alert">
-        Veuillez indiquer un Todo
+    const warnirngMsg = warnirng && <div className='alert alert-danger mt-3 shadow p-3 mb-2 rounded text-center' role="alert">
+        Veuillez indiquer un Todo S'il vous plait.
     </div>
 
     return (
